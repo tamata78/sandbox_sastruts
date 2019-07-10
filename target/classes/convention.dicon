@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR//DTD S2Container 2.4//EN" 
+	"http://www.seasar.org/dtd/components24.dtd">
+<components>
+	<component class="org.seasar.framework.convention.impl.NamingConventionImpl">
+		<!-- HOT deploy 対象のルートパッケージ -->
+		<!-- Seasar2がHOT deployで動作するのは、env.txtがctの場合 -->
+		<initMethod name="addRootPackageName">
+			<arg>"com.example"</arg>
+		</initMethod>
+        <!-- HOT deploy 非対象のルートパッケージ
+		<initMethod name="addRootPackageName">
+			<arg>"com.example"</arg>
+			<arg>false</arg>
+		</initMethod>
+		-->
+	</component>
+	<component class="org.seasar.framework.convention.impl.PersistenceConventionImpl"/>
+</components>
