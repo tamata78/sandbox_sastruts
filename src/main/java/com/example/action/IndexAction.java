@@ -1,12 +1,20 @@
 package com.example.action;
 
+import javax.annotation.Resource;
+
 import org.seasar.struts.annotation.Execute;
 
-public class IndexAction
-{
+import com.example.service.CityService;
+
+public class IndexAction {
+
+    @Resource
+    CityService cityService;
+
     @Execute(validator = false)
-    public String index()
-    {
+    public String index() {
+        cityService.mainMethod();
+
         return "index.jsp";
     }
 }
