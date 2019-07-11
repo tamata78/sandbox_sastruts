@@ -13,7 +13,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <release>1.8</release>
+          <release>1.6</release>
         </configuration>
       </plugin>
       <plugin>
@@ -153,6 +153,13 @@
     </repository>
   </repositories>
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.seasar.dao/s2-dao-tiger -->
+    <dependency>
+        <groupId>org.seasar.dao</groupId>
+        <artifactId>s2-dao-tiger</artifactId>
+        <version>1.0.47</version>
+    </dependency>
+
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
@@ -244,7 +251,7 @@
       <artifactId>geronimo-jta_1.1_spec</artifactId>
       <version>1.0</version>
     </dependency>
-    <!-- If you want to use J2EE 1.4 server(not Tomcat), 
+    <!-- If you want to use J2EE 1.4 server(not Tomcat),
          add geronimo-jta_1.1_spec-1.0-tsr.jar -->
     <dependency>
       <groupId>org.apache.geronimo.specs</groupId>
