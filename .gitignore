@@ -1,6 +1,7 @@
 ### https://raw.github.com/github/gitignore/300be202df4d2bc4824249407fb617df64750627/Java.gitignore
 
 # Compiled class file
+target/
 *.class
 
 # Log file
@@ -24,4 +25,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+# personal env setting
+.classpath
+.project
+.settings/
+
+jdbc.dicon
 
